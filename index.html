@@ -4,27 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
     <title>Calculatrice Simple</title>
 </head>
 
 <body>
-    <form id="calculatrice">Calculatrice</form>
-    <input type="number" id="number1" name="number1" required>
-    <label for="operation"></label>
-    <select id="operation" name="operation" required>
-        <option value="addition">Addition (+)</option>
-        <option value="subtraction">Soustraction (-)</option>
-        <option value="multiplication">Multiplication (×)</option>
-        <option value="division">Division (÷)</option>
-    </select>
-    <input type="number" id="number1" name="number1" required>
-
+    <header><div id="titre">Calculatrice</div></header>
     
-    
-
-    <button type="button" onclick="calculate()">Calculer</button>
-    <input type="result" id="resultat" name="resultat" required>
-    </form>
+    <div class="calculatrice">
+        <input type="text" id="afficher" readonly>
+        <div class="click">
+            <button onclick="effacer('c')">C</button>
+            <button onclick="calculer('7')">7</button>
+            <button onclick="calculer('8')">8</button>
+            <button onclick="calculer('9')">9</button>
+            <button onclick="calculer('+')">+</button>
+            <button onclick="calculer('4')">4</button>
+            <button onclick="calculer('5')">5</button>
+            <button onclick="calculer('6')">6</button>
+            <button onclick="calculer('-')">-</button>
+            <button onclick="calculer('1')">1</button>
+            <button onclick="calculer('2')">2</button>
+            <button onclick="calculer('3')">3</button>
+            <button onclick="calculer('*')">*</button>
+            <button onclick="calculer('0')">0</button>
+            <button onclick="calculer('.')">.</button>
+            <button onclick="resultat('=')">=</button>
+            <button onclick="calculer('/')">/</button>
+        </div>
+    </div>
 </body>
-
+<script src="assets/script.js"></script>
 </html>
