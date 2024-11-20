@@ -1,10 +1,11 @@
-pipeline{
-agent any
+pipeline {
+    agent any
     stages {
-        stage('Build') {
+        stage('Test Node.js') {
             steps {
-                echo 'Building...'
+                sh 'node -v'
             }
         }
     }
 }
+
