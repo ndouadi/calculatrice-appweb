@@ -1,5 +1,10 @@
-Stage('Build'){
-  steps{
-    echo 'Début du Build'
-  }
+pipeline{
+agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building...'
+            }
+        }
+    }
 }
